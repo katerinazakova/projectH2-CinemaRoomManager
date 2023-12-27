@@ -22,13 +22,7 @@ public class Main {
                     cinema.showCinemaPlan(cinema.getCinemaSeats());
                     break;
                 case 2:
-                    Scanner scanner2 = new Scanner(System.in);
-                    System.out.println("Enter a row number:");
-                    int rowNumber = scanner2.nextInt();
-
-                    System.out.println("Enter a seat number in that row:");
-                    int seatNumber = scanner2.nextInt();
-                    cinema.buyTicket(cinema.getCinemaSeats(), rowNumber, seatNumber);
+                    cinema.buyTicket(cinema.getCinemaSeats());
                     break;
                 case 0:
                     return;
