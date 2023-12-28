@@ -9,7 +9,7 @@ public class Main {
         int rows = scanner.nextInt();
         System.out.println("Enter the number of seats in each row:");
         int seats = scanner.nextInt();
-        Cinema cinema = new Cinema(rows, seats);
+        CinemaSeatPlan cinema = new CinemaSeatPlan(rows, seats);
 
         while (true) {
             System.out.println("1. Show the seats");
@@ -22,7 +22,8 @@ public class Main {
                     cinema.showCinemaPlan(cinema.getCinemaSeats());
                     break;
                 case 2:
-                    cinema.buyTicket(cinema.getCinemaSeats());
+                    CinemaTickets cinematickets = new CinemaTickets();
+                    cinematickets.buyTicket(cinema.getCinemaSeats());
                     break;
                 case 0:
                     return;
